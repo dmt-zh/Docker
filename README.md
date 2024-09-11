@@ -137,3 +137,11 @@ docker run -d -v $(pwd)/secret:/app/secret ubuntu
 **Readonly режим:**\
 `docker run -v` <полный_путь_на_хосте>:<полный_путь_в_контейнере>:**ro** <образ>
 <hr>
+
+### Networks
+- `docker network ls` — список сетей
+- `docker network create` <название> — создать сеть
+- `docker network rm` <название> — удалить сет
+- `docker run --net=<название_сети> <образ>` — подключаем контейнер к сети
+- `docker inspect <название_или_ID_объекта>` — получить информацию об объектах докера (контейнер, образ, вольюм, сеть)
+
